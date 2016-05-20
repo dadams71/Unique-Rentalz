@@ -1,0 +1,15 @@
+{
+  "name": "app",
+  "version": "0.0.0",
+  "authors": [
+    "David Adams <adams_72@mac.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
