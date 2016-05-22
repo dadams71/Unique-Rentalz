@@ -1,0 +1,34 @@
+<section class="hero_{{parent}}"></section>
+<div class="navrow">
+    <div class="wrapper">
+        <ul id="submenu">
+            <li>
+                <a class="social fb" ng-href="#"></a>
+                <a class="social pin" ng-href="#"></a>
+                <a class="social ins" ng-href="#"></a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="row page-content">
+    <div class="col s12 m7">
+        <h3>{{title}}</h3>
+        <div ng-bind-html="content" class="content">{{content}}</div>
+    </div>
+    <div class="col s12 m5">
+<!--
+        <div class="row">
+            <ul class="col s2">
+                <li ng-repeat="nav in navsubs">
+                    <a ng-href="#/{{parent}}{{nav.url}}" class="prod-{{nav.name}}" ng-click="select(nav)" ng-class="{active: isActive(nav)}"></a>
+                </li>
+            </ul>
+            <div class="col s10 row product-image" ui-view>
+                <img alt="product picture" src="images/prod_white.jpg" />
+                <p>White</p>
+            </div>
+        </div>
+-->
+    </div>
+</div>

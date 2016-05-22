@@ -1,0 +1,106 @@
+{
+    "mainData": [{
+            "id": "0",
+            "title": "Welcome to Unique Rentalz",
+            "content": "<p>At Unique Rentalz we provide luxurious items for extraordinary events. We believe an event worth celebrating, should be done with elegance, grace and style. We will not compromise on quality, uniqueness and excellence of service, our client satisfaction is our priority. </p>",
+            "parent": "welcome",
+            "mainimage": "mainimage",
+            "navsubs": [
+                {
+                    "name": "",
+                    "url": ""
+                }
+    ],
+            "comment": ""
+}, {
+            "id": "1",
+            "title": "About us",
+            "content": "<p>Unique Rentalz was born out of the desire to make every event in your calendar an unforgettable occasion. We pride ourselves in sourcing decadent items from across the globe, unique to your specification; all in aid to dress your occasion with that <strong>Wow</strong> factor.</p><br /><p>What makes us different to other rentals business is our exquisite range of products paired with exceptional team expertise and our ground braking <strong>unique service</strong> experience.</p><br /><p>Our products are innovative and up to date with the latest trends, colors and styles, quantities are sufficient to satisfy both small and large scale events. Whether your event is corporate or private we have the capabilities to make it exceptionally unique.</p><br /> <p>The team consists of qualified buyers with expertise in the events industry. We are here to support you, be it a straight forward hire or <strong>unique service</strong> experience; our highly informed staff will make the process as smooth and professional as possible. We will spend time with you discussing your unique desires and immaculately deliver your product to your event so you and your guests can have the perfect experience. </p><br /><p>We are based in west London but our products can be hired across England, Scotland and Northern Ireland. All prices quoted online exclude delivery and collection.</p>",
+            "parent": "About",
+            "mainimage": "about_main.jpg",
+            "navsubs": [
+                {
+                    "name": "",
+                    "url": ""
+                }
+    ],
+            "comment": "Classic chairs collection"
+}, {
+            "id": "2",
+            "title": "Infinity Chairs",
+            "content": "<p>The clear acrylic infinity chair is the first in our collections of luxurious items and can be paired with any of our beautiful cushions. With a transparent appearance, the infinity chair adopts the demeanour of its surroundings, beautifully reflecting lighting, colours and venue decorations.</p><br /> <p> It is an exceptionally elegant option to enhance galas, wedding celebrations, bar mitzvahs, bridal showers, fashion showcases film premiere or any other upscale event you are hosting, it will surely make a grand impression when unveiled at your exquisite function. </p><br /> <p><strong>Chair covers are on their way out, Chiavari chairs are everywhere, make your event standout by booking our gorgeous Infinity Chairs for your next exclusive luxe soirée.</strong></p>",
+            "parent": "products",
+            "mainimage": "chair-cusions.jpg",
+            "navsubs": [
+                {
+                    "name": "White",
+                    "url": "/product_white"
+                },
+                {
+                    "name": "Black",
+                    "url": "/product_black"
+                },
+                {
+                    "name": "Red",
+                    "url": "/product_red"
+                },
+                {
+                    "name": "Cream",
+                    "url": "/product_cream"
+                },
+                {
+                    "name": "Blue",
+                    "url": "/product_blue"
+                },
+                {
+                    "name": "Mono",
+                    "url": "/padding_mono"
+                },
+                                {
+                    "name": "Color",
+                    "url": "/padding_color"
+                }
+    ],
+            "comment": "Infinity chairs"
+}, {
+            "id": "3",
+            "title": "Unique Services",
+            "content": "<p><strong>Unique service</strong> is a fresh and innovative service we are introducing to the events industry. It’s where we entrust our clients the ability to source out exceptional items for their events that is not currently or easily available in the UK. These items will be purchased by <strong>Unique Rentalz</strong> and then rented to our clients. </p><br /><p> Why? Our ethos as a business is to ensure you have the event of your dreams. Finances should not be a limitation. You might see a product you like and do not have the resources to purchase it or do not have use for the item after your event. Depending on the suitability with our goal and the time frame we will be able to stock this product for your use at your event Making your vision come alive is what we do, you having a memorable experience is why we exist.</p><br /><p>Before you dash away your dream of having that exquisite item, contact us and let us work together to produce a timeless memory. Please note: our bespoke unique service experience is only available to private clients.</p>",
+            "parent": "unique",
+            "mainimage": "uni_services.jpg",
+            "navsubs": [
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ],
+            "comment": "Classic chairs collection"
+}, {
+            "id": "5",
+            "title": "Throne Chairs",
+            "content": "<p>Timeless. Picturesque. Stunning. These modern gorgeous contemporary Throne chairs add glamour, sophistication and class to any event.</p><br /><p>They add a distinctive flair to any occasion and are perfect for, wedding reception, outdoor events, Photo shoots, exhibitions Bridal and Baby showers. Enhance your special event by booking our Throne Chairs for an ultra element of luxury and style.</p>",
+            "parent": "unique",
+            "mainimage": "about_main.jpg",
+            "navsubs": [
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ],
+            "comment": ""
+}, {
+            "id": "4",
+            "title": "Contact",
+            "content": "<p>For Rental information or you want to find out more about our <strong>Unique Services</strong>, use the form below to get in touch and see how we can turn your vision into relality.</p>",
+            "parent": "contact",
+            "mainimage": "mainimage",
+            "navsubs": [
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ],
+            "comment": ""
+}
+           ]
+}

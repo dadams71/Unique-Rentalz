@@ -1,15 +1,24 @@
 {
   "name": "app",
   "version": "0.0.0",
-  "authors": [
-    "David Adams <adams_72@mac.com>"
-  ],
+  "description": "",
+  "main": "",
   "license": "MIT",
+  "homepage": "",
+  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "angular": "^1.5.5",
+    "angular-sanitize": "^1.5.5",
+    "angular-ui-router": "^0.3.0",
+    "vegas": "^2.2.1",
+    "Materialize": "materialize#^0.97.6"
+  }
 }

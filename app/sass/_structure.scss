@@ -1,0 +1,327 @@
+@import "_variables";
+
+/*-----------------------------------------------------------
+
+Project:            Unique Rentalz
+Version:            1.0  
+Author:             David Adams
+Type:               {Less}
+
+----------------------------------------------------------------------
+NBS Structure page 
+----------------------------------------------------------------------*/
+
+html,
+body {
+    height: 100%;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.mypageheight {
+    flex: 1 0 auto;
+}
+body {
+    background-color: $prime-4;
+    font-family: "Roboto", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 87.5%; // base font 14px: 14/16 = 0.875 x 100 = 87.5%
+    line-height: 1.4em; // base lineheight 22.4px: 22.4/16 = 1.4em
+    color: $default;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+.flex-bottom {
+    align-self: flex-end;
+}
+
+/* Menu styles */
+
+header {
+    background-color: $navBG;
+}
+.navrow {
+    overflow: hidden;
+    position: absolute;
+    right: 0%;
+    z-index: 1;
+}
+.ngbs-logo {
+    background: transparent url(../images/uniquerentalzlogo.png) no-repeat 0 0;
+    float: left;
+    width: 310px;
+    height: 85px;
+    background-position: 0 10px;
+    background-size: contain;
+}
+
+//splash Logo...
+.ngbs-logo-splash {
+    background: transparent url(../images/uniquerentalzlogo.png) no-repeat 0 6px;
+    width: 350px;
+    height: 85px;
+    display: block;
+    float: inherit;
+    margin: 20% auto 0;
+    background-size: contain;
+}
+.slash-text {
+    width: 100%;
+    p {
+        margin: 0 auto;
+        width: 100px;
+        color: $prime-2;
+    }
+}
+.splash-bg {
+    background: $navBG-top;
+}
+.wrapper {
+    box-shadow: none;
+    overflow: hidden;
+}
+.fa-navicon {
+    font-size: 1.5rem !important;
+    color: #fff;
+    height: 85px;
+}
+.navbar-custom {
+    background: $navBG-top;
+    box-shadow: none;
+    height: 85px;
+    z-index: 998;
+    li {
+        float: left;
+        list-style: none;
+        margin: 0 5px;
+        a {
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 1rem;
+            border-width: 0 1px;
+            border-style: solid;
+            border-color: transparent;
+            //text-transform: uppercase; A3A13924
+            line-height: 67px; //5.5rem;
+            color: #fff;
+            &.active {
+                position: relative;
+                color: $prime-2;
+            }
+        }
+    }
+    #mainNav {
+        padding: 16px;
+        height: 60px;
+        float: left;
+        color: #242426;
+        li a {
+            font-weight: 400;
+            font-size: 1.1em;
+        }
+    }
+}
+section.content {
+    //display: flex;
+    flex: 1;
+    position: relative;
+}
+.centered-menu {
+    float: right;
+    display: block;
+    margin: 0 auto;
+}
+@media only screen and (min-width: 601px) {}
+@media only screen and (min-width: 993px) {
+    .mobile-logo {
+        display: none;
+    }
+}
+#submenu {
+    overflow-x: auto;
+    overflow-y: hidden;
+    //padding-bottom: 50px;
+    white-space: nowrap;
+    webkit-overflow-scrolling: touch;
+    li {
+        display: inline-block;
+        list-style: none;
+        padding: 5px;
+        font-family: $opensans-regular;
+        margin: 0 15px;
+        -webkit-animation-name: fb-slidein-animation;
+        animation-name: fb-slidein-animation;
+        -webkit-animation-duration: 350ms;
+        animation-duration: 350ms;
+        -webkit-animation-fill-mode: backwards;
+        animation-fill-mode: backwards;
+        float: right;
+        a.social {
+            display: block;
+            background: transparent url(../images/social-icons.png) no-repeat;
+            color: orangered;
+            float: left;
+            width: 40px;
+            background-size: 114px;
+            margin-left: 10px;
+            height: 40px;
+            //text-indent: -50000px;
+            //Social Icons
+            &.fb {
+                background-position: 0 0;
+            }
+            &.pin {
+                background-position: -37px 0;
+            }
+            &.ins {
+                background-position: -75px 0;
+            }
+        }
+        a {
+            color: #000;
+            line-height: 28px;
+            font-weight: 200;
+            font-size: 0.87rem;
+            &.active {
+                color: $active-sub;
+                padding-bottom: 8px;
+            }
+        }
+    }
+}
+.user-access {
+    color: $default;
+    font-size: 1.3rem;
+    padding-left: 15px;
+    line-height: 4.1rem;
+    .font-orange {
+        color: #fcab4a;
+    }
+    .font-green {
+        color: #64bc70;
+    }
+    .user-icn {
+        background: transparent url(../images/user-full.png) no-repeat 0 0;
+        background-size: 25px;
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+        margin: 0 7px;
+        line-height: 20px;
+        position: relative;
+        top: 6px;
+    }
+    .user-name {
+        font-size: 0.8rem;
+    }
+}
+.button-collapse {
+    .fa-navicon {
+        line-height: 4em;
+        padding: 0 1em 0 0.5em;
+    }
+}
+
+/* Amends to the Materials CSS*/
+
+.navbar-custom {
+    div.row {
+        margin-bottom: 0;
+    }
+}
+//Main content
+.page-content .content ~ img {
+    margin-top: 30px;
+    width: 100%;
+}
+.page-content {
+    //padding: 10px;
+    position: relative;
+    h3 {
+        color: #fff;
+    }
+    .image-content {
+        // padding: 0 70px;
+        // margin-top: 90px;
+        img {
+            margin-top: 35px;
+            width: 100%;
+        }
+        p {
+            color: $prime-2;
+            text-align: right;
+        }
+    }
+    .content {
+        //padding: 0 30px;
+        font-size: 1rem;
+        color: #fff;
+        strong {
+            color: $prime-2;
+        }
+    }
+}
+.imSoSticky {
+    opacity: .80;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+.footer.page-footer {
+    background-color: #f5f5f5;
+    border-top: 1px solid #e8e8e8;
+    margin-top: 0;
+    padding-top: 0;
+}
+.footer-copyright {
+    background-color: rgba(51, 51, 51, 0.08);
+}
+.active {
+    & .triangle-border,
+    & .menu-active {
+        width: 100%;
+        height: 0;
+        position: absolute;
+        //border-left: 11px solid transparent;
+        //border-right: 11px solid transparent;
+        border-bottom: 3px solid $prime-2;
+        right: 0;
+        left: 0;
+        margin: auto;
+        top: 83px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .ngbs-logo {
+//        width: 245px;
+//        background-position: 0 18px;
+        
+        width: 310px;
+        background-position: 0 12px;
+    }
+    .navbar-custom li a {
+        line-height: 85px;
+    }
+    .page-content img {
+        margin-top: 85px;
+    }
+}
+@media only screen and (min-width: 601px) {
+    
+    .page-content {
+        .content ~ img {
+        //margin: 30px;
+        width: 90%;
+        }
+        
+      .image-content img {
+            //margin-top: 85px;
+        }
+    }
+}
+
+body .vegas-container {
+    position: initial !important;
+}

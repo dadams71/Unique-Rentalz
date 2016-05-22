@@ -1,0 +1,140 @@
+@import "_variables";
+
+/*-----------------------------------------------------------
+
+Project:            Unique Rentalz
+Version:            1.0  
+Author:             David Adams
+----------------------------------------------------------------------
+NBS Reset page
+----------------------------------------------------------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video { margin: 0; padding: 0; border: 0 none; outline: 0; font-size: 100%; font-family: inherit; vertical-align: baseline; }
+
+html  
+{
+    overflow-y: scroll /* Always force a scrollbar in non-IE */;
+    -webkit-font-smoothing: antialiased !important;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);/* Webkit font smoothing */
+
+}
+
+
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+/* HTML5 display-role reset for older browsers */
+h1, h2, h3, h4, h5, h6, pre, code, address, caption, cite, code, em, strong, th, figcaption { font-style: normal; font-weight: normal; }
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+a img { border: 0; }
+img { border: none; }
+em { color: #666666; font-style: normal; }
+abbr { border-bottom: 1px dotted #666666; cursor: help; }
+nav ul { list-style: none; }
+ul { list-style: none outside none; }
+ul, li { list-style-type: none; }
+ul li { list-style-type: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+blockquote:before, blockquote:after { content: ""; }
+q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+fieldset { display: block; border: 0 none; }
+
+form, select, input, textarea { margin: 0; padding: 0; }
+label { display: block; font-weight: normal; }
+input, select { vertical-align: middle; -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */ -moz-box-sizing: border-box; /* Firefox, other Gecko */ box-sizing: border-box; /* Opera/IE 8+ */ }
+textarea { overflow: auto; resize: none; outline: none; -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */ -moz-box-sizing: border-box; /* Firefox, other Gecko */ box-sizing: border-box; /* Opera/IE 8+ */ }
+
+
+
+sup, sub { height: 0; line-height: 1; vertical-align: baseline; _vertical-align: bottom; color: #C00; }
+sup { bottom: 1ex; font-style: italic; font-weight: bold; }
+sub { top: .5ex; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #585c5b; margin: 1em 0; padding: 0; }
+
+/* END RESET CSS */
+
+
+
+/*  HTML5 Snippets   
+    ****************************************************************************************/
+
+/* bicubic resizing for non-native sized IMG */
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+/* align checkboxes, radios, text inputs with their label */
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; *vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+
+/* Formatting quoted code */
+pre { padding: 15px; white-space: pre; /* CSS2 */ white-space: pre-wrap; /* CSS 2.1 */ white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */ -ms-word-wrap: break-word; /* IE8*/ word-wrap: break-word; }
+
+
+/* Print styles */
+@media print {
+    * { background: transparent !important; color: #444 !important; text-shadow: none; }
+    a, a:visited { color: #444 !important; text-decoration: underline; }
+    a:after { content: " (" attr(href) ")"; }
+    abbr:after { content: " (" attr(title) ")"; }
+    .ir a:after { content: ""; }
+    /* Don't show links for images */
+    pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+    img { page-break-inside: avoid; }
+    @page { margin: 0.5cm; }
+    p, h2, h3 { orphans: 3; widows: 3; }
+    h2, h3 { page-break-after: avoid; }
+}
+
+
+/*  Non-semantic helper classes 
+    ****************************************************************************************/
+
+/* for image replacement */
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+
+/* Hide for both screenreaders and browsers
+       css-discuss.incutio.com/wiki/Screenreader_Visibility */
+.hidden { display: none; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders 
+       www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden  */
+.visuallyhidden { position: absolute !important; clip: rect(1px 1px 1px 1px); /* IE6, IE7 */ clip: rect(1px, 1px, 1px, 1px); }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* >> The Magnificent CLEARFIX: Updated to prevent margin-collapsing on child elements << j.mp/bestclearfix */
+/*.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; visibility: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }*/
+
+
+a:link, a:visited,
+a:active, a:hover { color: #656565; }
+
+header, footer, hgroup,
+nav, section { display: block; }
+
+mark { background-color: #a6dbed; padding-left: 5px; padding-right: 5px; }
+
+*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }

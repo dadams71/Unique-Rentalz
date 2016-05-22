@@ -1,0 +1,631 @@
+/*-----------------------------------------------------------
+
+Project:            Unique Rentalz
+Version:            1.0  
+Author:             David Adams
+----------------------------------------------------------------------
+NBS Reset page
+----------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+  outline: 0;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+html {
+  overflow-y: scroll;
+  -webkit-font-smoothing: antialiased !important;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  /* Webkit font smoothing */ }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* HTML5 display-role reset for older browsers */
+h1, h2, h3, h4, h5, h6, pre, code, address, caption, cite, code, em, strong, th, figcaption {
+  font-style: normal;
+  font-weight: normal; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+a img {
+  border: 0; }
+
+img {
+  border: none; }
+
+em {
+  color: #666666;
+  font-style: normal; }
+
+abbr {
+  border-bottom: 1px dotted #666666;
+  cursor: help; }
+
+nav ul {
+  list-style: none; }
+
+ul {
+  list-style: none outside none; }
+
+ul, li {
+  list-style-type: none; }
+
+ul li {
+  list-style-type: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+blockquote:before, blockquote:after {
+  content: ""; }
+
+q:before, q:after {
+  content: ""; }
+
+blockquote, q {
+  quotes: "" ""; }
+
+fieldset {
+  display: block;
+  border: 0 none; }
+
+form, select, input, textarea {
+  margin: 0;
+  padding: 0; }
+
+label {
+  display: block;
+  font-weight: normal; }
+
+input, select {
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */ }
+
+textarea {
+  overflow: auto;
+  resize: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */ }
+
+sup, sub {
+  height: 0;
+  line-height: 1;
+  vertical-align: baseline;
+  _vertical-align: bottom;
+  color: #C00; }
+
+sup {
+  bottom: 1ex;
+  font-style: italic;
+  font-weight: bold; }
+
+sub {
+  top: .5ex; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #585c5b;
+  margin: 1em 0;
+  padding: 0; }
+
+/* END RESET CSS */
+/*  HTML5 Snippets   
+    ****************************************************************************************/
+/* bicubic resizing for non-native sized IMG */
+.ie7 img {
+  -ms-interpolation-mode: bicubic; }
+
+/* align checkboxes, radios, text inputs with their label */
+input[type="radio"] {
+  vertical-align: text-bottom; }
+
+input[type="checkbox"] {
+  vertical-align: bottom;
+  *vertical-align: baseline; }
+
+.ie6 input {
+  vertical-align: text-bottom; }
+
+/* Formatting quoted code */
+pre {
+  padding: 15px;
+  white-space: pre;
+  /* CSS2 */
+  white-space: pre-wrap;
+  /* CSS 2.1 */
+  white-space: pre-line;
+  /* CSS 3 (and 2.1 as well, actually) */
+  -ms-word-wrap: break-word;
+  /* IE8*/
+  word-wrap: break-word; }
+
+/* Print styles */
+@media print {
+  * {
+    background: transparent !important;
+    color: #444 !important;
+    text-shadow: none; }
+  a, a:visited {
+    color: #444 !important;
+    text-decoration: underline; }
+  a:after {
+    content: " (" attr(href) ")"; }
+  abbr:after {
+    content: " (" attr(title) ")"; }
+  .ir a:after {
+    content: ""; }
+  /* Don't show links for images */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+  img {
+    page-break-inside: avoid; }
+  @page {
+    margin: 0.5cm; }
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3; }
+  h2, h3 {
+    page-break-after: avoid; } }
+
+/*  Non-semantic helper classes 
+    ****************************************************************************************/
+/* for image replacement */
+.ir {
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr; }
+
+/* Hide for both screenreaders and browsers
+       css-discuss.incutio.com/wiki/Screenreader_Visibility */
+.hidden {
+  display: none;
+  visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders 
+       www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden  */
+.visuallyhidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px); }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible {
+  visibility: hidden; }
+
+/* >> The Magnificent CLEARFIX: Updated to prevent margin-collapsing on child elements << j.mp/bestclearfix */
+/*.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; visibility: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }*/
+a:link, a:visited,
+a:active, a:hover {
+  color: #656565; }
+
+header, footer, hgroup,
+nav, section {
+  display: block; }
+
+mark {
+  background-color: #a6dbed;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*-----------------------------------------------------------
+
+Project:            Unique Rentalz
+Version:            1.0  
+Author:             David Adams
+Type:               {Less}
+
+----------------------------------------------------------------------
+NBS Structure page 
+----------------------------------------------------------------------*/
+html,
+body {
+  height: 100%; }
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+.mypageheight {
+  flex: 1 0 auto; }
+
+body {
+  background-color: #9a9a9a;
+  font-family: "Roboto", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 87.5%;
+  line-height: 1.4em;
+  color: #3b3b3b;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important; }
+
+.flex-bottom {
+  align-self: flex-end; }
+
+/* Menu styles */
+header {
+  background-color: #fff; }
+
+.navrow {
+  overflow: hidden;
+  position: absolute;
+  right: 0%;
+  z-index: 1; }
+
+.ngbs-logo {
+  background: transparent url(../images/uniquerentalzlogo.png) no-repeat 0 0;
+  float: left;
+  width: 310px;
+  height: 85px;
+  background-position: 0 10px;
+  background-size: contain; }
+
+.ngbs-logo-splash {
+  background: transparent url(../images/uniquerentalzlogo.png) no-repeat 0 6px;
+  width: 350px;
+  height: 85px;
+  display: block;
+  float: inherit;
+  margin: 20% auto 0;
+  background-size: contain; }
+
+.slash-text {
+  width: 100%; }
+  .slash-text p {
+    margin: 0 auto;
+    width: 100px;
+    color: #f2be21; }
+
+.splash-bg {
+  background: #3f3f3f; }
+
+.wrapper {
+  box-shadow: none;
+  overflow: hidden; }
+
+.fa-navicon {
+  font-size: 1.5rem !important;
+  color: #fff;
+  height: 85px; }
+
+.navbar-custom {
+  background: #3f3f3f;
+  box-shadow: none;
+  height: 85px;
+  z-index: 998; }
+  .navbar-custom li {
+    float: left;
+    list-style: none;
+    margin: 0 5px; }
+    .navbar-custom li a {
+      text-decoration: none;
+      font-weight: 400;
+      font-size: 1rem;
+      border-width: 0 1px;
+      border-style: solid;
+      border-color: transparent;
+      line-height: 67px;
+      color: #fff; }
+      .navbar-custom li a.active {
+        position: relative;
+        color: #f2be21; }
+  .navbar-custom #mainNav {
+    padding: 16px;
+    height: 60px;
+    float: left;
+    color: #242426; }
+    .navbar-custom #mainNav li a {
+      font-weight: 400;
+      font-size: 1.1em; }
+
+section.content {
+  flex: 1;
+  position: relative; }
+
+.centered-menu {
+  float: right;
+  display: block;
+  margin: 0 auto; }
+
+@media only screen and (min-width: 993px) {
+  .mobile-logo {
+    display: none; } }
+
+#submenu {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  webkit-overflow-scrolling: touch; }
+  #submenu li {
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+    font-family: open_sansregular;
+    margin: 0 15px;
+    -webkit-animation-name: fb-slidein-animation;
+    animation-name: fb-slidein-animation;
+    -webkit-animation-duration: 350ms;
+    animation-duration: 350ms;
+    -webkit-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+    float: right; }
+    #submenu li a.social {
+      display: block;
+      background: transparent url(../images/social-icons.png) no-repeat;
+      color: orangered;
+      float: left;
+      width: 40px;
+      background-size: 114px;
+      margin-left: 10px;
+      height: 40px; }
+      #submenu li a.social.fb {
+        background-position: 0 0; }
+      #submenu li a.social.pin {
+        background-position: -37px 0; }
+      #submenu li a.social.ins {
+        background-position: -75px 0; }
+    #submenu li a {
+      color: #000;
+      line-height: 28px;
+      font-weight: 200;
+      font-size: 0.87rem; }
+      #submenu li a.active {
+        color: #444;
+        padding-bottom: 8px; }
+
+.user-access {
+  color: #3b3b3b;
+  font-size: 1.3rem;
+  padding-left: 15px;
+  line-height: 4.1rem; }
+  .user-access .font-orange {
+    color: #fcab4a; }
+  .user-access .font-green {
+    color: #64bc70; }
+  .user-access .user-icn {
+    background: transparent url(../images/user-full.png) no-repeat 0 0;
+    background-size: 25px;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin: 0 7px;
+    line-height: 20px;
+    position: relative;
+    top: 6px; }
+  .user-access .user-name {
+    font-size: 0.8rem; }
+
+.button-collapse .fa-navicon {
+  line-height: 4em;
+  padding: 0 1em 0 0.5em; }
+
+/* Amends to the Materials CSS*/
+.navbar-custom div.row {
+  margin-bottom: 0; }
+
+.page-content .content ~ img {
+  margin-top: 30px;
+  width: 100%; }
+
+.page-content {
+  position: relative; }
+  .page-content h3 {
+    color: #fff; }
+  .page-content .image-content img {
+    margin-top: 35px;
+    width: 100%; }
+  .page-content .image-content p {
+    color: #f2be21;
+    text-align: right; }
+  .page-content .content {
+    font-size: 1rem;
+    color: #fff; }
+    .page-content .content strong {
+      color: #f2be21; }
+
+.imSoSticky {
+  opacity: .80;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out; }
+
+.footer.page-footer {
+  background-color: #f5f5f5;
+  border-top: 1px solid #e8e8e8;
+  margin-top: 0;
+  padding-top: 0; }
+
+.footer-copyright {
+  background-color: rgba(51, 51, 51, 0.08); }
+
+.active .triangle-border,
+.active .menu-active {
+  width: 100%;
+  height: 0;
+  position: absolute;
+  border-bottom: 3px solid #f2be21;
+  right: 0;
+  left: 0;
+  margin: auto;
+  top: 83px; }
+
+@media only screen and (min-width: 992px) {
+  .ngbs-logo {
+    width: 310px;
+    background-position: 0 12px; }
+  .navbar-custom li a {
+    line-height: 85px; }
+  .page-content img {
+    margin-top: 85px; } }
+
+@media only screen and (min-width: 601px) {
+  .page-content .content ~ img {
+    width: 90%; } }
+
+body .vegas-container {
+  position: initial !important; }
+
+/*-----------------------------------------------------------
+
+Project:            Unique Rentalz
+Version:            1.0  
+Author:             David Adams
+Type:               {Less}
+
+----------------------------------------------------------------------
+Custom pages
+----------------------------------------------------------------------*/
+.hero_welcome {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background: transparent url(../images/login-screen-background3.jpg) no-repeat center center; }
+
+.hero_contact {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background: transparent url(../images/contact-screen-background.jpg) no-repeat center center; }
+
+.welcome-panel {
+  background-image: url("../images/sidepanel-bg.png");
+  padding: 20px;
+  margin-top: 20%; }
+
+.products-image,
+.products-submenu {
+  float: left; }
+
+.products-submenu {
+  margin-top: 35px; }
+
+.product-buttons li {
+  float: left;
+  margin-right: 5px; }
+
+@media only screen and (min-width: 601px) {
+  .products-submenu {
+    margin-top: 85px !important; } }
+
+.products-submenu a {
+  width: 35px;
+  height: 35px;
+  display: block;
+  border-radius: 50%; }
+  .products-submenu a.prod-Black {
+    background-color: #1d1f1e !important; }
+  .products-submenu a.prod-White {
+    background-color: #fff; }
+  .products-submenu a.prod-Red {
+    background-color: #74242f; }
+  .products-submenu a.prod-Cream {
+    background-color: #dedbd4; }
+  .products-submenu a.prod-Blue {
+    background-color: #68adcc; }
+  .products-submenu a.prod-Mono {
+    background-color: #3f3f3f; }
+  .products-submenu a.prod-Color {
+    background-color: #f2be21; }
+  .products-submenu a:hover {
+    opacity: 0.8; }
+
+.product-image img {
+  margin: 0;
+  width: 100%; }
+
+.product-tab {
+  font-size: 1.1rem;
+  font-family: open_sanslight;
+  margin-right: 1rem;
+  margin-left: .5rem; }
+  .product-tab:link, .product-tab:visited, .product-tab:active {
+    color: #fff; }
+  .product-tab:hover {
+    color: #f2be21; }
+
+@font-face {
+  font-family: 'open_sanslight';
+  src: url("../font/opensans-light/OpenSans-Light-webfont.eot");
+  src: url("../font/opensans-light/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../font/opensans-light/OpenSans-Light-webfont.woff") format("woff"), url("../font/opensans-light/OpenSans-Light-webfont.ttf") format("truetype"), url("../font/opensans-light/OpenSans-Light-webfont.svg#open_sanslight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'open_sansregular';
+  src: url("../font/opensans-regular/OpenSans-Regular-webfont.eot");
+  src: url("../font/opensans-regular/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../font/opensans-regular/OpenSans-Regular-webfont.woff") format("woff"), url("../font/opensans-regular/OpenSans-Regular-webfont.ttf") format("truetype"), url("../font/opensans-regular/OpenSans-Regular-webfont.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'open_sanssemibold';
+  src: url("fonts/opensans-semibold/OpenSans-Semibold-webfont.eot");
+  src: url("fonts/opensans-semibold/OpenSans-Semibold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/opensans-semibold/OpenSans-Semibold-webfont.woff") format("woff"), url("fonts/opensans-semibold/OpenSans-Semibold-webfont.ttf") format("truetype"), url("fonts/opensans-semibold/OpenSans-Semibold-webfont.svg#open_sanssemibold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'open_sansbold';
+  src: url("fonts/opensans-bold/OpenSans-Bold-webfont.eot");
+  src: url("fonts/opensans-bold/OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/opensans-bold/OpenSans-Bold-webfont.woff") format("woff"), url("fonts/opensans-bold/OpenSans-Bold-webfont.ttf") format("truetype"), url("fonts/opensans-bold/OpenSans-Bold-webfont.svg#open_sansbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  font-family: open_sanslight; }
+
+h3 {
+  font-style: italic; }
+
+/*# sourceMappingURL=../css/maps/style.css.map */
