@@ -1,16 +1,20 @@
 <!doctype html>
 <html ng-app="uniqueRentalz">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1">
 
-    <title>Unique Rentalz</title> 
+    <title>Unique Rentalz</title>
+    <link rel="stylesheet" media="all" href="bower_components/Materialize/dist/css/materialize.css" />
+    <link rel="stylesheet" media="all" href="bower_components/vegas/dist/vegas.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
     <link rel="stylesheet" media="all" href="css/style.css" />
-    <link rel="stylesheet" media="all" href="bower_components/Materialize/dist/css/materialize.min.css" />
-    <link rel="stylesheet" media="all" href="bower_components/vegas/dist/vegas.min.css" />
 
+
+    
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
@@ -19,77 +23,89 @@
     <script src="bower_components/Materialize/dist/js/materialize.min.js"></script>
     
     
+
+
     <script src="js/app.js"></script>
     <script src="data/data.js"></script>
     <script src="js/vegas-ang.js"></script>
-
     <script src="controllers/mainCtrl.js"></script>
-    
+
 </head>
-    <body ng-controller="indexCtrl">
-        <nav class="navbar navbar-custom">
-            <div class="container3">
-                <div class="nav-wrapper">
-                    <div class="row">
-                        <div class="col s12">
-                            <a href="#" data-activates="mobile-menu" class="button-collapse left">
-                                <span class="fa-navicon fa"></span>
-                            </a>
-                            <a href="#!" class="left ngbs-logo"></a>
-                            <ul class="hide-on-med-and-down centered-menu">
-                                <li>
-                                    <a ui-sref="welcome" ui-sref-active="active">
-                                        <div class="menu-active"></div>
-                                        Welcome</a>
-                                </li>
 
-                                <li>
-                                    <a ui-sref="about" ui-sref-active="active">
-                                        <div class="menu-active"></div>
-                                        About</a>
-                                </li>
+<body ng-controller="indexCtrl">
+    <nav class="navbar navbar-custom">
+        <div class="container3">
+            <div class="nav-wrapper">
+                <div class="row">
+                    <div class="col s12">
+                        <a href="#" data-activates="mobile-menu" class="button-collapse left">
+                            <span class=""><i class="material-icons">menu</i></span>
+                        </a>
+                        <a href="#!" class="left ngbs-logo"></a>
 
-                                <li>
-                                    <a ui-sref="products" ui-sref-active="active">
-                                        <div class="menu-active"></div>
-                                        Products</a>
-                                </li>
-                                <li>
-                                    <a ui-sref="uni" ui-sref-active="active">
-                                        <div class="menu-active"></div>
-                                        Unique Services</a>
-                                </li>
-                                <li>
-                                    <a ui-sref="contact" ui-sref-active="active">
-                                        <div class="menu-active"></div>
-                                        Contact</a>
-                                </li>
-                            </ul>
-                        </div>
+                        <ul id="dropdown1" class="dropdown-content">
+                            <li><a ui-sref="products.product_a" ui-sref-active="active">Infinity Chairs</a></li>
 
-                        <ul class="side-nav" id="mobile-menu">
-                            <li><a ui-sref="welcome" ui-sref-active="active">Welcome</a></li>
-                            <li><a ui-sref="about" ui-sref-active="active">About</a></li>
-                            <li><a ui-sref="products" ui-sref-active="active">Products</a></li>
-                            <li><a ui-sref="uni" ui-sref-active="active">Unique services</a></li>
-                            <li><a ui-sref="contact" ui-sref-active="active">Contact</a></li>
+                            <li class="divider"></li>
+                            <li><a ui-sref="products.product_b" ui-sref-active="active">Throne Chairs</a></li>
+                        </ul>
+                        <ul class="hide-on-med-and-down centered-menu">
+                            <li>
+                                <a ui-sref="welcome" ui-sref-active="active">
+                                    <div class="menu-active"></div>
+                                    Welcome</a>
+                            </li>
+
+                            <li>
+                                <a ui-sref="about" ui-sref-active="active">
+                                    <div class="menu-active"></div>
+                                    About</a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-button" data-activates="dropdown1">
+                                    <div class="menu-active"></div>
+                                    Products</a>
+                            </li>
+                            <li>
+                                <a ui-sref="uni" ui-sref-active="active">
+                                    <div class="menu-active"></div>
+                                    Unique Services</a>
+                            </li>
+                            <li>
+                                <a ui-sref="contact" ui-sref-active="active">
+                                    <div class="menu-active"></div>
+                                    Contact</a>
+                            </li>
                         </ul>
                     </div>
+
+                    <ul class="side-nav" id="mobile-menu">
+                        <li><a ui-sref="welcome" ui-sref-active="active">Welcome</a></li>
+                        <li><a ui-sref="about" ui-sref-active="active">About</a></li>
+                        <li><a ui-sref="products" ui-sref-active="active">Products</a></li>
+                        <li><a ui-sref="products.product_a" ui-sref-active="active">Infinity Chairs</a></li>
+                        <li><a ui-sref="products.product_b" ui-sref-active="active">Throne Chairs</a></li>
+                        <li><a ui-sref="uni" ui-sref-active="active">Unique services</a></li>
+                        <li><a ui-sref="contact" ui-sref-active="active">Contact</a></li>
+                    </ul>
                 </div>
             </div>
-        </nav>
-        <div class="navrow">
-            <div class="wrapper">
-                <ul id="submenu">
-                    <li>
-                        <a class="social fb" ng-href="https://www.facebook.com/Uniquerentalz"></a>
-                        <a class="social pin" ng-href="https://www.pinterest.com/Uniquerentalz/"></a>
-                        <a class="social ins" ng-href="https://www.instagram.com/unique_rentalz/"></a>
-                    </li>
-                </ul>
-            </div>
         </div>
-        <section class="content" ui-view></section>
-        <footer class="footer page-footer" ng-include="'templates/footer.html'"></footer>
-    </body>
+    </nav>
+    <div class="navrow">
+        <div class="wrapper">
+            <ul id="submenu">
+                <li>
+                    <a class="social fb" ng-href="https://www.facebook.com/Uniquerentalz"></a>
+                    <a class="social pin" ng-href="https://www.pinterest.com/Uniquerentalz/"></a>
+                    <a class="social ins" ng-href="https://www.instagram.com/unique_rentalz/"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <section class="content" ui-view></section>
+    <footer class="footer page-footer" ng-include="'templates/footer.html'"></footer>
+</body>
+
 </html>

@@ -32,9 +32,12 @@ body {
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
 }
-
 .flex-bottom {
     align-self: flex-end;
+}
+
+form.col {
+    padding-left:0 !important;
 }
 
 /* Menu styles */
@@ -56,7 +59,6 @@ header {
     background-position: 0 10px;
     background-size: contain;
 }
-
 //splash Logo...
 .ngbs-logo-splash {
     background: transparent url(../images/uniquerentalzlogo.png) no-repeat 0 6px;
@@ -95,7 +97,8 @@ header {
     li {
         float: left;
         list-style: none;
-        margin: 0 5px;
+        min-height: auto;
+        //margin: 0 5px;
         a {
             text-decoration: none;
             font-weight: 400;
@@ -217,7 +220,13 @@ section.content {
         font-size: 0.8rem;
     }
 }
-.button-collapse {
+nav a.button-collapse {
+    i {
+        font-size: 1.8rem;
+        line-height: 80px;
+        color: #fff;
+        padding-right: 0.7rem;
+    }
     .fa-navicon {
         line-height: 4em;
         padding: 0 1em 0 0.5em;
@@ -237,7 +246,7 @@ section.content {
     width: 100%;
 }
 .page-content {
-    //padding: 10px;
+    
     position: relative;
     h3 {
         color: #fff;
@@ -260,6 +269,9 @@ section.content {
         color: #fff;
         strong {
             color: $prime-2;
+        }
+        p {
+            margin-bottom: 0.5em;
         }
     }
 }
@@ -295,9 +307,8 @@ section.content {
 }
 @media only screen and (min-width: 992px) {
     .ngbs-logo {
-//        width: 245px;
-//        background-position: 0 18px;
-        
+        //        width: 245px;
+        //        background-position: 0 18px;
         width: 310px;
         background-position: 0 12px;
     }
@@ -309,19 +320,94 @@ section.content {
     }
 }
 @media only screen and (min-width: 601px) {
-    
     .page-content {
         .content ~ img {
-        //margin: 30px;
-        width: 90%;
+            //margin: 30px;
+            width: 90%;
         }
-        
-      .image-content img {
+        .image-content img {
             //margin-top: 85px;
         }
     }
 }
-
 body .vegas-container {
     position: initial !important;
+}
+.dropdown-content {
+    top: 86px!important;
+    min-width: 150px;
+    & li> a {
+        line-height: 22px;
+        padding: 8px;
+        color: $nav;
+        font-size: 0.9rem;
+    }
+}
+
+.side-nav {
+    width: 200px;
+    li a {
+        color: $default;
+    }
+}
+
+
+input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
+    height: 1.7rem;
+    font-size: 0.9rem;
+    border-bottom-color: #fff;
+}
+
+.input-field label {
+    font-size: 0.8rem;
+    color: #fff;
+    top: 0.3rem;
+}
+
+[type="checkbox"]+label {
+    font-size: 0.9rem;
+}
+
+input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid $prime-2;
+    box-shadow: 0 1px 0 0 $prime-2;
+}
+
+input:not([type]):focus:not([readonly]) + label,
+input[type=text]:focus:not([readonly]) + label,
+input[type=password]:focus:not([readonly]) + label,
+input[type=email]:focus:not([readonly]) + label,
+input[type=url]:focus:not([readonly]) + label,
+input[type=time]:focus:not([readonly]) + label,
+input[type=date]:focus:not([readonly]) + label,
+input[type=datetime]:focus:not([readonly]) + label,
+input[type=datetime-local]:focus:not([readonly]) + label,
+input[type=tel]:focus:not([readonly]) + label,
+input[type=number]:focus:not([readonly]) + label,
+input[type=search]:focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #fff;
+}
+
+input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
+    border-bottom-color: #fff;
+}
+
+.input-field label.active {
+  font-size: 0.8rem;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+[type="checkbox"].filled-in:not(:checked) + label:after {
+    border: 2px solid $prime-2;
+}
+
+[type="checkbox"].filled-in:checked + label:after {
+    border: 2px solid $prime-2;
+    background-color: $prime-2;
+}
+
+label {
+    color: #fff;
 }

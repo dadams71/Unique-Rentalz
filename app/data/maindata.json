@@ -28,7 +28,7 @@
 }, {
             "id": "2",
             "title": "Infinity Chairs",
-            "content": "<p>The clear acrylic infinity chair is the first in our collections of luxurious items and can be paired with any of our beautiful cushions. With a transparent appearance, the infinity chair adopts the demeanour of its surroundings, beautifully reflecting lighting, colours and venue decorations.</p><br /> <p> It is an exceptionally elegant option to enhance galas, wedding celebrations, bar mitzvahs, bridal showers, fashion showcases film premiere or any other upscale event you are hosting, it will surely make a grand impression when unveiled at your exquisite function. </p><br /> <p><strong>Chair covers are on their way out, Chiavari chairs are everywhere, make your event standout by booking our gorgeous Infinity Chairs for your next exclusive luxe soirée.</strong></p>",
+            "content": "<p>The white infinity chair is the first in our collections of luxurious items and can be paired with any of our beautiful cushions. With a transparent appearance, the infinity chair adopts the demeanour of its surroundings, beautifully reflecting lighting, colours and venue decorations.</p>",
             "parent": "products",
             "mainimage": "chair-cusions.jpg",
             "navsubs": [
@@ -65,7 +65,7 @@
 }, {
             "id": "3",
             "title": "Unique Services",
-            "content": "<p><strong>Unique service</strong> is a fresh and innovative service we are introducing to the events industry. It’s where we entrust our clients the ability to source out exceptional items for their events that is not currently or easily available in the UK. These items will be purchased by <strong>Unique Rentalz</strong> and then rented to our clients. </p><br /><p> Why? Our ethos as a business is to ensure you have the event of your dreams. Finances should not be a limitation. You might see a product you like and do not have the resources to purchase it or do not have use for the item after your event. Depending on the suitability with our goal and the time frame we will be able to stock this product for your use at your event Making your vision come alive is what we do, you having a memorable experience is why we exist.</p><br /><p>Before you dash away your dream of having that exquisite item, contact us and let us work together to produce a timeless memory. Please note: our bespoke unique service experience is only available to private clients.</p>",
+            "content": "<p>Why? Our ethos as a business is to ensure you have the event of your dreams. Finances should not be a limitation. You might see a product you desire and do not have sufficient financial resources or do not have use for the item after your event. Depending on the suitability with our goals and the time frame we will be able to stock this product for your use at your event. Making your vision come alive is what we do, you having a memorable experience is why we exist.</p>",
             "parent": "unique",
             "mainimage": "uni_services.jpg",
             "navsubs": [
@@ -78,7 +78,7 @@
 }, {
             "id": "5",
             "title": "Throne Chairs",
-            "content": "<p>Timeless. Picturesque. Stunning. These modern gorgeous contemporary Throne chairs add glamour, sophistication and class to any event.</p><br /><p>They add a distinctive flair to any occasion and are perfect for, wedding reception, outdoor events, Photo shoots, exhibitions Bridal and Baby showers. Enhance your special event by booking our Throne Chairs for an ultra element of luxury and style.</p>",
+            "content": "<p>Timeless. Picturesque. Stunning. These modern gorgeous contemporary Throne chairs add glamour, sophistication and class to any event.</p><br /><p>They add a distinctive flair to any occasion and are perfect for, wedding reception, outdoor events, Photo shoots, exhibitions, Bridal and Baby showers. Enhance your special event by booking our Throne Chairs for an ultra element of luxury and style.</p>",
             "parent": "unique",
             "mainimage": "about_main.jpg",
             "navsubs": [
@@ -91,7 +91,7 @@
 }, {
             "id": "4",
             "title": "Contact",
-            "content": "<p>For Rental information or you want to find out more about our <strong>Unique Services</strong>, use the form below to get in touch and see how we can turn your vision into relality.</p>",
+            "content": "<p>For Rental information or if you wish to find out more about our <strong>Unique Services</strong>, use the form below to get in touch and see how we can turn your vision into reality.</p><p>Contact us now:</p><ul class=\"address-list\"><li>Telephone: +44(0) 770 813 5577</li><li>Email: <a href=\"mailto:info@uniquerentalz.co.uk\">info@uniquerentalz.co.uk</a></li></ul><p>Or fill out the form below:</p>",
             "parent": "contact",
             "mainimage": "mainimage",
             "navsubs": [

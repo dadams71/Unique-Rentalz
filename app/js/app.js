@@ -120,7 +120,7 @@ uniqueRentalz.config(function ($stateProvider, $urlRouterProvider) {
         url: "/padding_mono",
         templateUrl: "templates/content.html",
         controller: function ($scope) {
-            $scope.content = "Chair covers";
+            $scope.content = "Seat covers";
             $scope.image = "chair-cusions.jpg";
         }
     })
@@ -129,14 +129,14 @@ uniqueRentalz.config(function ($stateProvider, $urlRouterProvider) {
         url: "/padding_color",
         templateUrl: "templates/content.html",
         controller: function ($scope) {
-            $scope.content = "Colour chair covers";
+            $scope.content = "Seat covers";
             $scope.image = "chair-color.jpg";
         }
     })
 
     .state('uni', {
         url: "/uni",
-        templateUrl: "templates/pagetype_a.html",
+        templateUrl: "templates/pagetype_ab.html",
         controller: "uniqueCtrl"
     })
 
@@ -148,3 +148,8 @@ uniqueRentalz.config(function ($stateProvider, $urlRouterProvider) {
     })
 
 });
+
+        $(document).ready(function() {
+            $(".button-collapse").sideNav();
+            $(".dropdown-button").dropdown();
+        });

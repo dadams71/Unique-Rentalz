@@ -286,6 +286,9 @@ body {
 .flex-bottom {
   align-self: flex-end; }
 
+form.col {
+  padding-left: 0 !important; }
+
 /* Menu styles */
 header {
   background-color: #fff; }
@@ -340,7 +343,7 @@ header {
   .navbar-custom li {
     float: left;
     list-style: none;
-    margin: 0 5px; }
+    min-height: auto; }
     .navbar-custom li a {
       text-decoration: none;
       font-weight: 400;
@@ -439,7 +442,13 @@ section.content {
   .user-access .user-name {
     font-size: 0.8rem; }
 
-.button-collapse .fa-navicon {
+nav a.button-collapse i {
+  font-size: 1.8rem;
+  line-height: 80px;
+  color: #fff;
+  padding-right: 0.7rem; }
+
+nav a.button-collapse .fa-navicon {
   line-height: 4em;
   padding: 0 1em 0 0.5em; }
 
@@ -466,6 +475,8 @@ section.content {
     color: #fff; }
     .page-content .content strong {
       color: #f2be21; }
+    .page-content .content p {
+      margin-bottom: 0.5em; }
 
 .imSoSticky {
   opacity: .80;
@@ -509,6 +520,70 @@ section.content {
 body .vegas-container {
   position: initial !important; }
 
+.dropdown-content {
+  top: 86px !important;
+  min-width: 150px; }
+  .dropdown-content li > a {
+    line-height: 22px;
+    padding: 8px;
+    color: #656565;
+    font-size: 0.9rem; }
+
+.side-nav {
+  width: 200px; }
+  .side-nav li a {
+    color: #3b3b3b; }
+
+input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
+  height: 1.7rem;
+  font-size: 0.9rem;
+  border-bottom-color: #fff; }
+
+.input-field label {
+  font-size: 0.8rem;
+  color: #fff;
+  top: 0.3rem; }
+
+[type="checkbox"] + label {
+  font-size: 0.9rem; }
+
+input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #f2be21;
+  box-shadow: 0 1px 0 0 #f2be21; }
+
+input:not([type]):focus:not([readonly]) + label,
+input[type=text]:focus:not([readonly]) + label,
+input[type=password]:focus:not([readonly]) + label,
+input[type=email]:focus:not([readonly]) + label,
+input[type=url]:focus:not([readonly]) + label,
+input[type=time]:focus:not([readonly]) + label,
+input[type=date]:focus:not([readonly]) + label,
+input[type=datetime]:focus:not([readonly]) + label,
+input[type=datetime-local]:focus:not([readonly]) + label,
+input[type=tel]:focus:not([readonly]) + label,
+input[type=number]:focus:not([readonly]) + label,
+input[type=search]:focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #fff; }
+
+input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
+  border-bottom-color: #fff; }
+
+.input-field label.active {
+  font-size: 0.8rem;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%); }
+
+[type="checkbox"].filled-in:not(:checked) + label:after {
+  border: 2px solid #f2be21; }
+
+[type="checkbox"].filled-in:checked + label:after {
+  border: 2px solid #f2be21;
+  background-color: #f2be21; }
+
+label {
+  color: #fff; }
+
 /*-----------------------------------------------------------
 
 Project:            Unique Rentalz
@@ -546,8 +621,20 @@ Custom pages
 .products-submenu {
   float: left; }
 
+.check-form {
+  float: left; }
+  .check-form p {
+    margin: 0 0 10px 20px;
+    color: #fff; }
+  .check-form .font-white {
+    color: #fff; }
+
 .products-submenu {
   margin-top: 35px; }
+  .products-submenu p {
+    margin: 0 0 10px 20px; }
+  .products-submenu .font-white {
+    color: #fff; }
 
 .product-buttons li {
   float: left;
@@ -593,6 +680,12 @@ Custom pages
   .product-tab:hover {
     color: #f2be21; }
 
+.address-list {
+  font-size: 1rem;
+  margin-bottom: 10px; }
+  .address-list li {
+    margin-bottom: 5px; }
+
 @font-face {
   font-family: 'open_sanslight';
   src: url("../font/opensans-light/OpenSans-Light-webfont.eot");
@@ -626,6 +719,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: open_sanslight; }
 
 h3 {
-  font-style: italic; }
+  font-style: italic;
+  font-size: 2.92rem;
+  line-height: 110%;
+  margin: 1.46rem 0 1.168rem 0; }
 
 /*# sourceMappingURL=../css/maps/style.css.map */
